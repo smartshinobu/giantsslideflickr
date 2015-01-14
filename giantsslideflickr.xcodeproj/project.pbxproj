@@ -14,6 +14,7 @@
 		6B75ED461A6232B600EE8489 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B75ED451A6232B600EE8489 /* Images.xcassets */; };
 		6B75ED491A6232B600EE8489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B75ED471A6232B600EE8489 /* LaunchScreen.xib */; };
 		6B75ED551A6232B600EE8489 /* giantsslideflickrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B75ED541A6232B600EE8489 /* giantsslideflickrTests.m */; };
+		6B9942C61A6491D700A2DB2A /* Webreturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9942C51A6491D700A2DB2A /* Webreturn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6B75ED4E1A6232B600EE8489 /* giantsslideflickrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giantsslideflickrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B75ED531A6232B600EE8489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B75ED541A6232B600EE8489 /* giantsslideflickrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = giantsslideflickrTests.m; sourceTree = "<group>"; };
+		6B9942C41A6491CF00A2DB2A /* Webreturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Webreturn.h; sourceTree = "<group>"; };
+		6B9942C51A6491D700A2DB2A /* Webreturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webreturn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		6B75ED371A6232B600EE8489 /* giantsslideflickr */ = {
 			isa = PBXGroup;
 			children = (
+				6B9942C41A6491CF00A2DB2A /* Webreturn.h */,
+				6B9942C51A6491D700A2DB2A /* Webreturn.m */,
 				6B75ED3C1A6232B600EE8489 /* AppDelegate.h */,
 				6B75ED3D1A6232B600EE8489 /* AppDelegate.m */,
 				6B75ED3F1A6232B600EE8489 /* ViewController.h */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9942C61A6491D700A2DB2A /* Webreturn.m in Sources */,
 				6B75ED411A6232B600EE8489 /* ViewController.m in Sources */,
 				6B75ED3E1A6232B600EE8489 /* AppDelegate.m in Sources */,
 				6B75ED3B1A6232B600EE8489 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				6B75ED5A1A6232B600EE8489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B75ED5B1A6232B600EE8489 /* Build configuration list for PBXNativeTarget "giantsslideflickrTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				6B75ED5D1A6232B600EE8489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
