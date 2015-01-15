@@ -24,7 +24,8 @@
 }
 
 - (void)viewDidLoad {
-    tag = @"読売ジャイアンツ";
+    self.label.hidden = YES;
+    tag = @"阿部慎之助";
     NSString *entag = [tag stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
     urlstr = @"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f7b9764be72c7fc3effb412aaf949e63&tags=(tag)&format=json&nojsoncallback=1";
     NSString *url = [urlstr stringByReplacingOccurrencesOfString:@"(tag)" withString:entag];
@@ -49,6 +50,8 @@
     //NSLog(@"%@",imgdic);
     imgurl = [NSString stringWithFormat:@"http://farm%@.staticflickr.com/%@/%@_%@.jpg",[imgdic objectForKey:@"farm"],[imgdic objectForKey:@"server"],[imgdic objectForKey:@"id"],[imgdic objectForKey:@"secret"]];
     self.imageview.image = [Webreturn WebImage:imgurl];
+    self.label.text = [imgdic objectForKey:@"title"];
+    self.label.hidden = NO;
     if (cnt < [array count]-1) {
         cnt++;
     }else{
